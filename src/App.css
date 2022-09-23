@@ -1,0 +1,103 @@
+
+.nav-item{
+  color:white;
+  text-decoration: none;
+  margin-right:20px;
+  font-weight: 500;
+}
+.nav-item:hover{
+  color:red;
+  transition: 0.3s;
+}
+.banner{
+  height:600px;
+  display: flex;
+  align-items: center;
+}
+.banner::before{
+  position: absolute;
+  left:0;
+  width:100%;
+  height:600px;
+  content:"";
+  background:linear-gradient(to right,black,transparent);
+}
+
+.overview{
+  color:white;
+  width:40%;
+  margin-left: 20px;
+  z-index: 1;
+}
+.card{
+  width:300px;
+  height:150px;
+  background-size: 300px 150px;
+  transition: ALL 0.3s ease-in-out;
+  z-index: 1;
+  }
+
+
+
+.card:hover{
+  transform: translate(0,-75px) scale(2);
+  width:400px;
+  z-index:2
+  
+  
+  
+   
+  
+}
+
+.card-size{
+  width:300px;
+  height:300px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  
+  }
+
+.overlay{
+  position: absolute;
+  left: 0;
+  width:300px;
+  height:150px;
+  background-color: black;
+  opacity: 0;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.overlay:hover{
+  position: absolute;
+  left: -2px;
+  width:300px;
+  height:300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  
+  
+  
+}
+.overlay:hover .title{
+  position: absolute;
+  z-index: 3;
+  color: white;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.card:hover>.title{
+  opacity: 1;
+  color:white;
+}
+
+.home-mg{
+  margin-left:20px;
+  margin-right: 20px;
+}
+.react-multi-carousel-item{
+  transform-style:unset;
+}
