@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/CSS3-#1572B6?style=flat-square&logo=CSS3&logoColor=#1572B6"/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
