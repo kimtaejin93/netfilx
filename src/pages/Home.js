@@ -15,13 +15,13 @@ const Home = () => {
   },[])
   
   return (
-    <div className='home-mg'>
+    <div className='home'>
       {popularMovies.results&&<Banner movie={popularMovies.results[0]}/>}
-      <h1>Popular Movie</h1>
+      <h1 className='home-class'>Popular Movie</h1>
       {popularMovies.results&&<MovieSlide movies={popularMovies}/>}
-      <h1>Top rated Movie</h1>
+      <h1 className='home-class'>Top rated Movie</h1>
       {topRatedMovies.results&&<MovieSlide movies={topRatedMovies}/>}
-      <h1>Upcoming Movie</h1>
+      <h1 className='home-class'>Upcoming Movie</h1>
       {upComingMovies.results&&<MovieSlide movies={upComingMovies}/>}
     </div>
   )

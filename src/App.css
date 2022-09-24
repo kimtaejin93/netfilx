@@ -31,18 +31,22 @@
 }
 .card{
   width:300px;
-  height:150px;
-  background-size: 300px 150px;
+  height:200px;
+  background-size: cover;
   transition: ALL 0.3s ease-in-out;
   z-index: 1;
+  border-radius: 5% 5%;
+  background-repeat:no-repeat;
+  border: none;
+  
   }
 
 
 
 .card:hover{
-  transform: translate(0,-75px) scale(2);
-  width:400px;
-  z-index:2
+  transform: scale(1.5);
+  width:300px;
+  z-index:5
   
   
   
@@ -55,27 +59,27 @@
   height:300px;
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  
   
   }
 
 .overlay{
   position: absolute;
-  left: 0;
+  left: -1px;
   width:300px;
-  height:150px;
+  height:200px;
   background-color: black;
   opacity: 0;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  border-radius: 5% 5%;
+  transition: opacity 0.3s ease-in-out;
   
 }
 
 .overlay:hover{
   position: absolute;
-  left: -2px;
+  
   width:300px;
-  height:300px;
+  height:200px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   
@@ -88,16 +92,54 @@
   color: white;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
-}
-.card:hover>.title{
-  opacity: 1;
-  color:white;
-}
+  }
 
-.home-mg{
-  margin-left:20px;
-  margin-right: 20px;
+
+.home{
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  
+  
 }
 .react-multi-carousel-item{
-  transform-style:unset;
+  transform-style:unset !important;
+}
+.movie-overview{
+  line-height: 15px;
+  font-size: 10px;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  margin-bottom:20px;
+  
+
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 5px;
+  
+}
+ul li:first-child:hover{
+  transform: translateX(100px);
+  z-index: 2;
+}
+ul li:first-child{
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+.genre{
+  border: 1px solid white;
+  background-color: rgb(190, 26, 26);
+  border-radius: 10%;
+  font-size: 10px;
+  margin-right: 2px;
+}
+.genre-area{
+  display: flex;
+}
+.home-class{
+  color:white;
+  -webkit-text-stroke: 0.2px black;
 }
