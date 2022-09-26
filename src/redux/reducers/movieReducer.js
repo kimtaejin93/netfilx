@@ -3,6 +3,7 @@ let initialState={
     topRatedMovies:{},
     upComingMovies:{},
     movieGenre:[],
+    clickedMovie:{}
 }
 
 function movieReducer(state=initialState,action){
@@ -15,7 +16,11 @@ function movieReducer(state=initialState,action){
                 upComingMovies:payload.upComingMovies,
                 movieGenre:payload.movieGenre,
             }
-        default:
+        case "MovieClick":
+            return{
+                ...state,clickedMovie:payload.item
+            }
+            default:
             return{...state}
     }
 }

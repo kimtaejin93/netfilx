@@ -95,12 +95,7 @@
   }
 
 
-.home{
-  background-color: rgba(0, 0, 0, 0.9);
-  
-  
-  
-}
+
 .react-multi-carousel-item{
   transform-style:unset !important;
 }
@@ -142,4 +137,31 @@ ul li:first-child{
 .home-class{
   color:white;
   -webkit-text-stroke: 0.2px black;
+}
+ul li:last-child{
+  transition: 0.5s ease-in-out;
+  z-index: 2;
+}
+ul li:last-child:hover{
+  transform: translateX(-100px);
+  z-index: 2;
+}
+.detail-card-image{
+  width: 500px;
+ 
+ 
+  
+}
+.detail-page{
+  
+  height: 100vh;
+}
+.detail-card{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:white;
+}
+.App{
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
 }
