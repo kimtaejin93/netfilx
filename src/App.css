@@ -116,11 +116,11 @@
   margin-left: 5px;
   
 }
-ul li:first-child:hover{
+.home ul li:first-child:hover{
   transform: translateX(100px);
   z-index: 2;
 }
-ul li:first-child{
+.home ul li:first-child{
   transition: 0.5s ease-in-out;
   z-index: 2;
 }
@@ -138,11 +138,11 @@ ul li:first-child{
   color:white;
   -webkit-text-stroke: 0.2px black;
 }
-ul li:last-child{
+.home ul li:last-child{
   transition: 0.5s ease-in-out;
   z-index: 2;
 }
-ul li:last-child:hover{
+.home ul li:last-child:hover{
   transform: translateX(-100px);
   z-index: 2;
 }
@@ -154,7 +154,7 @@ ul li:last-child:hover{
 }
 .detail-page{
   
-  height: 100vh;
+  height: 100%;
 }
 .detail-card{
   margin-top: 20px;
@@ -164,4 +164,58 @@ ul li:last-child:hover{
 .App{
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
+}
+.movieDetail-overview{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.detail-title{
+  display: flex;
+  align-items: center;
+ 
+  
+}
+.adult-badge{
+  text-align: end;
+}
+.detail-badge{
+  width:80px;
+}
+.detailPage-review{
+  color:white;
+  
+  
+}
+
+
+.detailPage-review-title{
+  color:white;
+  text-align: center;
+  
+}
+.review{
+  
+  border-top: 1px solid gray;
+  
+  padding-top: 10px;
+  padding-bottom:10px;
+  width:1000px;
+  height: 300px;
+  overflow: auto;
+  
+}
+.Footer{
+  background-color:#dc3545;
+  color:white;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+
+}
+.react-multi-carousel-item{
+display: flex;
+justify-content: center;
 }

@@ -20,7 +20,22 @@ function getMovies(){
         })
     }
 }
+function getMovieDetails(params){
+    const API_KEY=process.env.REACT_APP_API_KEY;
+    return async(dispatch)=>{
+    const movieDetailApi=api.get(`/movie/${params.id}?api_key=${API_KEY}&language=en-US`);
+    const movieReviewApi=api.get(`/movie/${params.id}/reviews?api_key=${API_KEY}&language=en-US&page=1`)
+    let [detailPageMovieInfo,movieReview]=await Promise.all([movieDetailApi,movieReviewApi]);
+        console.log(movieDetailApi,movieReviewApi)
+    dispatch({
+        type:"GET_MOVIE_DETAILS",
+        payload:{detailPageMovieInfo:detailPageMovieInfo,
+            movieReview:movieReview}
+    })
+
+    }
+}
 
 export const movieAction={
-    getMovies,
+    getMovies,getMovieDetails
 } 
