@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { movieAction } from '../redux/actions/movieAction';
 import Review from '../components/Review'
+import Youtube from '../components/Youtube';
 
 
 
@@ -60,7 +61,7 @@ const MovieDetails = () => {
             </Col>
             <Col>{detailPageMovieInfo.runtime}Min</Col>
           </Row>
-          
+          <Youtube/>
           </Col>
 
         </Row>
