@@ -169,7 +169,7 @@
   color:white;
 }
 .App{
-  background-color: rgba(0, 0, 0, 0.9);
+  
   height: 100%;
 }
 .movieDetail-overview{
@@ -220,6 +220,9 @@
   margin-top: 5px;
   padding-bottom: 5px;
   text-align: center;
+  position: fixed;
+  bottom:0;
+  width:100vw;
 
 }
 .react-multi-carousel-item{
@@ -238,17 +241,38 @@ justify-content: center;
   width: 100%;
   height: 500px;
   background-size:cover;
-  
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
 }
+
 .MoviesMovieCard{
   background:linear-gradient(to right,black,80%,transparent);
   width: 100%;
   height: 100%;
   z-index: 3;
+  
 }
 .pagination{
   display: flex;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.Search-MovieSize{
+  margin-top: 20px;
+  height: 600px;
+  border: 1px solid gray;
+  color:white
+}
+.moviePage-overview{
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.MovieSize:hover .moviePage-overview{
+  opacity: 1;
+}
+
+.MovieSize:hover{
+  scale: 1.2;
 }

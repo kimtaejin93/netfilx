@@ -14,6 +14,7 @@ const Movies = () => {
   const pageNum=useSelector(state=>state.movie.pageNum);
   console.log("pageNum",pageNum);
   useEffect(()=>{dispatch(movieAction.getOtherMovies(pageNum))},[pageNum]);
+  useEffect(()=>{dispatch({type:"PageClicked",payload:{num:1}})},[])
   
   return (
     

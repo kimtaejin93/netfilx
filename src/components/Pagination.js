@@ -32,7 +32,7 @@ else{
         
         let num=e.target.innerText
         console.log(e.target.innerText);
-       
+        window.scrollTo(0,0);
         dispatch({
             type:"PageClicked",
             payload:{num:num}
