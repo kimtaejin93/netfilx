@@ -276,3 +276,6 @@ justify-content: center;
 .MovieSize:hover{
   scale: 1.2;
 }
+.search-page-margin{
+  margin-top: 80px;
+}

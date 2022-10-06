@@ -21,7 +21,7 @@ const SearchPage = () => {
       
      
   return (
-    <div>
+    <div className='search-page-margin'>
         <Container>
           {movie.results&&movie.results.length!=0?movie.results.map((movie)=><SearchMovies movie={movie}/>):<div><h1>검색결과없습니다.</h1><h1>검색결과없습니다.</h1><h1>검색결과없습니다.</h1><h1>검색결과없습니다.</h1><h1>검색결과없습니다.</h1><h1>검색결과없습니다.</h1><h1>검색결과없습니다.</h1></div>}
             
