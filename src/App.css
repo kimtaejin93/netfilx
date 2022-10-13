@@ -279,3 +279,13 @@ justify-content: center;
 .search-page-margin{
   margin-top: 80px;
 }
+.no-result{
+  color:white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+
+}
