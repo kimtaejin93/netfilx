@@ -8,8 +8,7 @@ import MovieSlide from '../components/MovieSlide';
 const Home = () => {
   const dispatch=useDispatch();
   const {popularMovies,topRatedMovies,upComingMovies}=useSelector((state)=>state.movie)
-  const keyword=useSelector(state=>state.movie.searchKeyword);
-    console.log("keyword",keyword)
+  
     useEffect(()=>{
     dispatch(movieAction.getMovies())
     

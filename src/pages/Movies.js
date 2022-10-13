@@ -15,13 +15,11 @@ const Movies = () => {
   const pageNum=useSelector(state=>state.movie.pageNum);
   const movieGenre=useSelector(state=>state.movie.movieGenre);
   
-  console.log("pageNum",pageNum);
+  
   useEffect(()=>{dispatch(movieAction.getOtherMovies(pageNum))},[pageNum]);
   useEffect(()=>{dispatch(movieAction.getMovies())},[]);
   useEffect(()=>{dispatch({type:"PageClicked",payload:{num:1}})},[]) //1로초기화 시켜주려고함
-  console.log("movieCard",movieCard);
-
-console.log("movieCard후",movieCard);
+  
   return (
     
     <div className='movies-page'>

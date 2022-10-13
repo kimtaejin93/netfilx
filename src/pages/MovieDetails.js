@@ -16,15 +16,13 @@ const MovieDetails = () => {
   const movieReview=useSelector(state=>state.movie.movieReview);
   const detailPageMovieInfo=useSelector(state=>state.movie.detailPageMovieInfo);
   const loading=useSelector(state=>state.movie.loading)
-  console.log("로딩",loading);
-  console.log("무비리뷰",movieReview);
-  console.log("디테일인포",detailPageMovieInfo);
+
   
   
   useEffect(
     ()=>{dispatch(movieAction.getMovieDetails(params))},[loading]
   )
-  console.log("현재파람",params);
+  
   
   return (
     

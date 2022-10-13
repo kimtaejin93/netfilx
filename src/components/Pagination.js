@@ -22,7 +22,6 @@ else{
     }
 }
   
-    console.log(page);
     const dispatch=useDispatch();
 
 
